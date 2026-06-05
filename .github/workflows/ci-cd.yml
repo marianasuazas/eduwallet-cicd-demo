@@ -1,0 +1,23 @@
+name: CI/CD EduWallet
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clonar repositorio
+        uses: actions/checkout@v3
+
+      - name: Verificar estructura del proyecto
+        run: echo "Proyecto EduWallet - Pipeline ejecutado correctamente"
+
+      - name: Simular pruebas
+        run: echo "Ejecutando pruebas automatizadas..."
+
+      - name: Simular despliegue
+        run: echo "Desplegando aplicación..."
